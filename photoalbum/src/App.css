@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e9c46a;
+}
+
+.photoThumbnail {
+  width: 200px;
+  height: 150px;
+}
+
+#albumsHeader {
+  grid-column: 1 / 4;
+  text-align: center;
+  background: #2a9d8f;
+  padding: 40px;
+  font-size: 40px;
+  color: #264653;
+}
+
+.album-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr;
+}
+
+.album {
+  display: grid;
+  justify-self: center;
+  align-self: start;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  border: 3px solid #e76f51;
+  border-radius: 5px;
+}
+
+.albumThumbnail {
+  width: 220px;
+  height: 220px;
+  border-bottom: 3px solid #e76f51;
+}
+
+#albumLabel {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+  color: #264653;
+}
+
+#photo-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+}
+
+#albumName {
+  grid-column: 1 / 5;
+  background: #2a9d8f;
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+  color: #264653;
+}
+
+.photo {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  border: 3px solid #e76f51;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.photoLabel {
+  text-align: center;
+  padding-top: 10px;
+  color: #264653;
+}
+
+.photoThumbnail {
+  width: 240px;
+  height: 180px;
+  border-bottom: 3px solid #e76f51;
+}
+
+#albumSidebar {
+  border-right: 3px solid #e76f51;
+}
+
+.albumSidebarList {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  color: #264653;
+}
+
+#back {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #264653;
+}
+
+.link {
+  text-decoration: none;
+  color: #264653;
+}
+
+.link:visited,
+.link:active {
+  color: #264653;
+}
+
+#modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: #f4a261;
+  cursor: pointer;
+}
+
+.activePhoto {
+  width: 60%;
+  margin-bottom: 20px;
+  border: 3px solid #2a9d8f;
+  border-radius: 5px;
+}
+
+.activePhotoName {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  border: 3px solid #2a9d8f;
+  border-radius: 5px;
+  width: 65%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: #264653;
+}
+
+/* #modalButton {
+  width: 40%;
+  margin: 0 auto;
+  padding: 40px;
+} */
