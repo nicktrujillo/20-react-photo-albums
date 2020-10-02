@@ -39,6 +39,10 @@ body {
   border-radius: 5px;
 }
 
+.album:hover {
+  box-shadow: 0 0 20px #e76f51;
+}
+
 .albumThumbnail {
   width: 220px;
   height: 220px;
@@ -76,6 +80,10 @@ body {
   padding-bottom: 15px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.photo:hover {
+  box-shadow: 0 0 20px #e76f51;
 }
 
 .photoLabel {
